@@ -1,0 +1,204 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "E2E Checkout journeys",
+    "line": 2,
+    "id": "e2e-checkout-journeys",
+    "tags": [
+      {
+        "name": "@e2e",
+        "line": 1
+      },
+      {
+        "name": "@e2eCheckoutJourney",
+        "line": 1
+      }
+    ],
+    "uri": "E2ECheckoutJourney.feature",
+    "elements": [
+      {
+        "id": "e2e-checkout-journeys;01-e2e-checkout-journey",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "01 E2E Checkout journey",
+        "tags": [
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@e2eCheckoutJourney",
+            "line": 1
+          },
+          {
+            "name": "@mega",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I navigate to home page",
+            "result": {
+              "status": "passed",
+              "duration": 10962000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I search for \"Faded Short Sleeve T-shirts\" product",
+            "result": {
+              "status": "passed",
+              "duration": 6049000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I navigate to \"1\" product on search page",
+            "result": {
+              "status": "passed",
+              "duration": 4027000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I add product to cart with \"3\" qty and \"M\" size as selected attributed",
+            "result": {
+              "status": "passed",
+              "duration": 1865000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I verify product details on checkout modal",
+            "result": {
+              "status": "passed",
+              "duration": 1531000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on proceed to checkout",
+            "result": {
+              "status": "passed",
+              "duration": 3624000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I verify product details on cart page",
+            "result": {
+              "status": "passed",
+              "duration": 270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click on proceed to checkout from \"Shopping Cart\" page",
+            "result": {
+              "status": "passed",
+              "duration": 4682000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I sign in with valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 7021000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I verify user is on \"Address\" step",
+            "result": {
+              "status": "passed",
+              "duration": 73000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I click on proceed to checkout from \"Address\" page",
+            "result": {
+              "status": "passed",
+              "duration": 3333000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I verify user is on \"Shipping\" step",
+            "result": {
+              "status": "passed",
+              "duration": 72000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I select to TnC for Shipping Carrier",
+            "result": {
+              "status": "passed",
+              "duration": 415000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I click on proceed to checkout from \"Carrier\" page",
+            "result": {
+              "status": "passed",
+              "duration": 3087000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I verify user is on \"Payment\" step",
+            "result": {
+              "status": "passed",
+              "duration": 68000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I verify product details on order summary page",
+            "result": {
+              "status": "passed",
+              "duration": 334000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

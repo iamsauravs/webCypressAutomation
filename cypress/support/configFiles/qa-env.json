@@ -1,0 +1,20 @@
+{
+  "baseUrl": "http://automationpractice.com",
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "testFiles": "**/*.{feature,features}",
+  "video": false,
+  "env": {
+    "apiUrl": "http://automationpractice.com",
+    "firstName": "Test",
+    "lastName": "User",
+    "email": "saurav1274@gmail.com",
+    "password": "password",
+    "TAGS": "not @ignore"
+  },
+  "viewportHeight": 900,
+  "viewportWidth": 1600,
+  "pageLoadTimeout": 600000,
+  "defaultCommandTimeout": 50000,
+  "responseTimeout": 80000,
+  "requestTimeout": 10000
+}

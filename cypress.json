@@ -1,0 +1,24 @@
+{
+  "baseUrl": "http://automationpractice.com/",
+  "extends": "cypress/support/configFiles/*",
+  "experimentalSessionSupport": false,
+  "screenshotOnRunFailure": true,
+  "screenshotsFolder": "cypress/screenshots",
+  "trashAssetsBeforeRuns": true,
+  "chromeWebSecurity": false,
+  "watchForFileChanges": false,
+  "viewportHeight": 900,
+  "viewportWidth": 1600,
+  "videoUploadOnPasses": false,
+  "pageLoadTimeout": 600000,
+  "defaultCommandTimeout": 90000,
+  "responseTimeout": 90000,
+  "requestTimeout": 10000,
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "video": false,
+  "env": {
+    "TAGS": "not @ignore",
+    "deployment": "megaDeployment",
+    "apiUrl": "http://automationpractice.com/"
+  }
+}

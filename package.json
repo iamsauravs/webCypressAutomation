@@ -1,0 +1,61 @@
+{
+  "name": "web-cypress-automation",
+  "version": "1.0.0",
+  "description": "Web Cypress Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "cy_open_qa": "npx cypress open --config-file cypress/support/configFiles/qa-env.json",
+    "e2e-qa": "npx cypress-tags run -e TAGS=\"@e2eCheckoutJourney\" -b chrome --config-file ./cypress/support/configFiles/qa-env.json",
+    "lint": "npx eslint .",
+    "lint_fix": "npx eslint --fix .",
+    "report": "node ./generateHTMLReport.js"
+  },
+  "devDependencies": {
+    "@bahmutov/cy-api": "^2.1.2",
+    "@bahmutov/cypress-extends": "^1.1.0",
+    "@cucumber/cucumber": "latest",
+    "@types/cypress-cucumber-preprocessor": "latest",
+    "@types/node": "latest",
+    "cucumber-html-reporter": "^5.5.0",
+    "cypress": "^9.7.0",
+    "cypress-cucumber-preprocessor": "latest",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-localstorage-commands": "latest",
+    "cypress-log-to-output": "^1.1.2",
+    "cypress-real-events": "^1.6.0",
+    "cypress-xpath": "^1.6.2",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.11.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-cucumber": "^1.4.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "moment": "latest",
+    "prettier": "2.2.1",
+    "typescript": "^4.5.5"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/integration/**/steps",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "report/JSON",
+      "filePrefix": "",
+      "fileSuffix": ""
+    },
+    "repository": {}
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "cypress-promise": "^1.1.0",
+    "decompress": "^4.2.1",
+    "extract-zip": "^2.0.1",
+    "fs.promises": "^0.1.2",
+    "jszip": "^3.7.1",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.4.1",
+    "original-fs": "^1.1.0",
+    "path": "^0.12.7",
+    "twilio": "^3.75.0",
+    "unzip": "^0.1.11"
+  }
+}
